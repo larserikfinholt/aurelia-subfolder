@@ -1,0 +1,10 @@
+<template>
+  <require from="resources/attributes/my-make-red"></require>
+  <h1 style="color:blue;">${message}</h1>
+  <button click.trigger="callService()">Call Service</button>
+  <ul>
+    <li repeat.for="item of items">
+      <span my-make-red>${item}</span>
+    </li>
+  </ul>
+</template>
